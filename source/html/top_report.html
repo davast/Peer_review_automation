@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html>
+
+  <body>
+
+  <div align="center" class="sample">
+  <center> 
+    <h1> Peer Review </h1>
+    <h5> this report shows status of each peer review check </h5> 
+  </center>
+  </div> 
+  <div> 
+    <table width="1200" border=1>
+      <tr>
+        <th width="1000">Checklist Name</th>
+        <th>Status</th>
+
+      </tr>
+      <tr>
+        <td width="1000"> drg31 path of this release</td>
+        <td><center><a>$pathcheck</a></center></td>
+      </tr>
+      <tr>
+        <td width="1000"> Confirmed reference .lib path on drg31 (if applicable) with PEM</td>
+        <td><center><a>$pathcheck</a></center></td>
+      </tr>
+      <tr>
+        <td width="1000"> Confirm the dropoff location follows the serdes build folder naming, applicable to projects that deployed the flow (e.g. e32)</td>
+        <td><center><a href="./feqa.xls"></a></center></td>
+      </tr>
+      <tr>
+        <td width="1000"> snapshot or label or GDS/CDL date</td>
+        <td><center><a href="./feqa.xls"></a></center></td>
+      </tr>
+      <tr>
+        <td width="1000"> confirm snapshot or GDS has fill included</td>
+        <td><center><a href="./feqa.xls"></a></center></td>
+      </tr>
+      <tr>
+        <td width="1000"> confirm libs generated with PBSA or flat margin</td>
+        <td><center><a href="./feqa.xls"></a></center></td>
+      </tr>
+      <tr>
+        <td width="1000"> confirm SI is enabled</td>
+        <td><center><a href="./feqa.xls"></a></center></td>
+      </tr>
+      <tr>
+        <td width="1000"> Checked for correct and consistent back-annotation across all corners (including sub-cell BA if applicable)</td>
+        <td><center><a href="./feqa.xls"></a></center></td>
+      </tr>
+      <tr>
+        <td width="1000"> Checked pin interface consistency between final merged and/or post-processed .lib against  RTL </td>
+        <td><center><a href="./feqa.xls"></a></center></td>
+      </tr>
+      <tr>
+        <td width="1000"> Checked all input pins  have correct max tran value, verified with alib_cirical_signal.xlsx <BR>and all violations with input_max_transition check reviewed with design team</td>
+        <td><center><a href="./feqa.xls"></a></center></td>
+      </tr>
+      <tr>
+        <td width="1000"> Checked all analog pins have cap values</td>
+        <td><center><a href="./feqa.xls"></a></center></td>
+      </tr>
+      <tr>
+        <td width="1000"> Checked all timing arcs are consistent with latest alib for this product (drg31 merged lib)</td>
+        <td><center><a href="./reports/shivini.html">$structural</a></center></td>
+      </tr>
+      <tr>
+        <td width="1000"> Checked all timing arcs are consistent with reference drg31 merged lib for base project across all corners</td>
+        <td><center><a href="./reports/shivini.html">$structural</a></center></td>
+      </tr>
+      <tr>
+        <td width="1000"> Checked all libs pass LC read_lib command with no errors</td>
+        <td><center><a href=""></a></center></td>
+      </tr>
+      <tr>
+        <td width="1000"> Checked released libs for msip_hipreLibPinAttributesCheck</td>
+        <td><center><a href="./reports/pinattr.html">$libattr</a></center></td>
+      </tr>
+      <tr>
+        <td width="1000"> Checked released libs for msip_hipreLibVsLib</td>
+        <td><center><a href="./reports/hiprelibvslib.html">$libvslib</a></center></td>
+      </tr>
+      <tr>
+        <td width="1000"> Checked timing arcs (delay) to have both MAX/MIN timing</td>
+        <td><center><a href="./reports/minmax.html">$minmax</a></center></td>
+      </tr>
+      <tr>
+        <td width="1000"> Timing arc for tx_ana_data_en added</td>
+        <td><center><a href="./reports/tx_ana_data_en.html">$txanafinder</a></center></td>
+      </tr>
+      <tr>
+        <td width="1000"> All timing arcs are consistent between PVTs</td>
+        <td><center><a href="./reports/structural.html">$libcompare</a></center></td>
+      </tr>
+      <tr>
+        <td width="1000"> Checked timing arcs for monotonicity </td>
+        <td><center><a href="./reports/monotonicity.html">$monotonicity</a></center></td>
+      </tr>
+      <tr>
+        <td width="1000"> Checked PVT corners released match project requirement (DI sharepoint or PEM)</td>
+        <td><center><a href="./reports/pvtcheck.html">$pvtcheck</a></center></td>
+      </tr>
+      <tr>
+        <td width="1000"> Checked ALL PVTs were released</td>
+        <td><center><a href="./feqa.xls"></a></center></td>
+      </tr>
+      <tr>
+        <td width="1000"> All alib STARs reviewed/fixed</td>
+        <td><center><a href="./feqa.xls"></a></center></td>
+      </tr>
+      <tr>
+        <td width="1000"> Checked correct permissions set for released .libs and created directories on drg31</td>
+        <td><center><a href="./reports/permissions.html">$permission</a></center></td>
+      </tr>
+      <tr>
+        <td width="1000"> Peer reviewer (release only)</td>
+        <td><center><a href="./feqa.xls"></a></center></td>
+      </tr>
+      <tr>
+        <td width="1000"> Transition time reports (output pin, internal) checked and sent to ANA team for review</td>
+        <td><center><a href="./feqa.xls"></a></center></td>
+      </tr>
+      <tr>
+        <td width="1000"> Gross value violation report checked</td>
+        <td><center><a href="./feqa.xls"></a></center></td>
+      </tr>
+      <tr>
+        <td width="1000"> Confirmed setup has been checked into p4 (provide p4 path + SITE:"local working area")</td>
+        <td><center><a href="./feqa.xls"></a></center></td>
+      </tr>
+      <tr>
+        <td width="1000"> Checklists uploaded to project sharepoint (msip-design)</td>
+        <td><center><a href="./feqa.xls"></a></center></td>
+      </tr>
+      <tr>
+        <td width="1000"> libs checked with check_setup_hold_vs_clock_periods.pl script </td>
+        <td><center><a href="./reports/clkperiods.html">$clkperiods</a></center></td>
+      </tr>
+      <tr>
+        <td width="1000"> Maximum timing difference (abs/rel) versus reference project on drg31 (if applicable)</td>
+        <td><center><a href="./feqa.xls"></a></center></td>
+      </tr>
+     </table>
+   </div> 
+   <div>
+    <h3> QTIP Additional checks </h3>
+    <table  width="1200" border=1>
+      <tr>
+        <th>Checklist Name</th>
+        <th>Status</th>
+      <tr>
+        <td width="1000"> MSIP Hypre LibCompare</td>
+        <td><center><a href="./reports/structural.html">$libcompare</a></center></td>
+      </tr>
+      </tr>
+    </table>
+   </div>
+  <body>
+<html>   
